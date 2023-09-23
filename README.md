@@ -6,7 +6,7 @@ Fast attack drones to provide a closer approach to target while, the recon drone
 
 Mapping out targets using python ai for unmanned drone fleets.
 
-# Hardware 
+# Hardware (Not model specific required but if budget allows)
 
 Drone: DJI Matrice 300 RTK Commercial Drone System
 
