@@ -36,3 +36,41 @@ def upload():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)  # Change host and port as needed
+
+
+# Video to network
+
+import cv2
+import numpy as np
+import requests
+import time
+import pyrtmp
+
+# Set the RTMP server address and stream key
+rtmp_server = "rtmp://your_rtmp_server_ip/live"
+stream_key = "your_stream_key"
+
+# Initialize video capture for the homebase server
+cap = cv2.VideoCapture(0)  # Use 0 for the default camera
+
+# Initialize the RTMP client
+client = pyrtmp.Client(rtmp_server)
+
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        break
+
+    # Encode the frame as JPEG
+    _, buffer = cv2.imencode('.jpg', frame)
+    frame_bytes = buffer.tobytes()
+
+    try:
+        # Send the frame to the RTMP server
+        client.write(frame_bytes)
+    except pyrtmp.RtmpException as e:
+        print(f"Error sending frame to RTMP server: {e}")
+        time.sleep(1)  # Retry after a delay in case of an error
+
+cap.release()
+
