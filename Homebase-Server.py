@@ -1,4 +1,4 @@
-// pip install flask
+' pip install flask
 
 
 import cv2
@@ -75,7 +75,7 @@ while True:
 cap.release()
 
 
-
+"""
 To send the video feed from the homebase server to multiple video receiving servers, you can use a broadcasting or streaming protocol. One common choice is to use the Real-Time Messaging Protocol (RTMP) for this purpose. You'll need to set up a video streaming server that supports RTMP, such as Nginx with the RTMP module or a dedicated media server like Wowza.
 
 Here's a high-level overview of how this can be accomplished:
@@ -89,4 +89,4 @@ Here's a high-level overview of how this can be accomplished:
 The homebase server will send the video feed to the RTMP server, and the receiving servers will connect to the RTMP server to receive and display the live stream. Be sure to configure the receiving servers with the appropriate RTMP stream URL, which includes the server address and stream key you specified in step 1.
 
 Please note that setting up an RTMP server and configuring the receiving servers can be complex, and the specifics may vary depending on your chosen software. Make sure to consult the documentation of your selected RTMP server and clients for detailed setup instructions.
-
+"""
