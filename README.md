@@ -28,5 +28,7 @@ The "Homebase Server (Server)" uses Flask to create a server that listens for in
 
 Make sure to replace "your_homebase_server_ip" and "your_homebase_server_port" with the actual IP address and port where your homebase server is running. Run the client code on the remote camera device, and run the server code on your homebase server. You can access the video feed by opening a web browser and navigating to http://<homebase_server_ip>:<port>.
 
+# Example 
+Code needs improvement but heres where I think I can get it in a few months.
 ![park-people-smart-city-computer-vision-use-case-visoai-e1660257558388-1536x1340](https://github.com/Ounceleopard/F-35-ATGS/assets/40043757/a378ccec-b183-443b-b4df-e7013ec92b28)
 ![video-analysis-background-substraction-opencv-knn-method-1536x576](https://github.com/Ounceleopard/F-35-ATGS/assets/40043757/af09fe03-450c-4452-82bc-c111d9d5c360)
