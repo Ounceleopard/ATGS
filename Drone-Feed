@@ -1,4 +1,39 @@
 import cv2
+import requests
+import numpy as np
+
+# Replace with the actual IP and port of your homebase server
+homebase_server_ip = "your_homebase_server_ip"
+homebase_server_port = "your_homebase_server_port"
+
+# Capture video from the remote camera (use 0 for the default camera)
+cap = cv2.VideoCapture(0)
+
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        break
+
+    # Encode the frame as JPEG
+    _, buffer = cv2.imencode('.jpg', frame)
+    frame_bytes = buffer.tobytes()
+
+    # Send the frame to the homebase server
+    try:
+        response = requests.post(
+            f"http://{homebase_server_ip}:{homebase_server_port}/upload",
+            data=frame_bytes,
+            headers={'Content-Type': 'image/jpeg'}
+        )
+    except requests.exceptions.RequestException as e:
+        print(f"Error sending frame to server: {e}")
+
+cap.release()
+
+
+
+
+import cv2
 import numpy as np
 
 # Load YOLOv3 configuration and weights
