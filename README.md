@@ -4,6 +4,8 @@ Air To Ground Scanner. Software to deploy on a drone for tracking targets using 
 Difference to the onboard software is that like a F-35 you can connect different drone feeds to map out a field. 
 Fast attack drones to provide a closer approach to target while, the recon drone fleet can map out the situation.
 
+Mapping out targets using python ai for unmanned drone fleets.
+
 # Hardware 
 
 Drone: DJI Matrice 300 RTK Commercial Drone System
