@@ -80,11 +80,11 @@ To send the video feed from the homebase server to multiple video receiving serv
 
 Here's a high-level overview of how this can be accomplished:
 
-1. **Set Up RTMP Server**: Install and configure an RTMP server on your homebase server or another dedicated server. For example, you can use Nginx with the RTMP module. Follow the documentation of your chosen server to set it up properly.
+1. Set Up RTMP Server: Install and configure an RTMP server on your homebase server or another dedicated server. For example, you can use Nginx with the RTMP module. Follow the documentation of your chosen server to set it up properly.
 
-2. **Modify Homebase Server (Sender)**: Modify the homebase server code to stream video to the RTMP server using the RTMP protocol. You can use a Python library like `pyrtmp` to accomplish this. Here's an example of how you can modify the homebase server code:
+2. Modify Homebase Server (Sender): Modify the homebase server code to stream video to the RTMP server using the RTMP protocol. You can use a Python library like `pyrtmp` to accomplish this. Here's an example of how you can modify the homebase server code:
 
-3. **Set Up Video Receiving Servers (Clients)**: On the receiving end, set up one or more video receiving servers (clients) that can connect to the RTMP server to receive and display the video feed. These can be other servers or devices running software that can play RTMP streams, such as VLC, FFmpeg, or a web-based player.
+3. Set Up Video Receiving Servers (Clients): On the receiving end, set up one or more video receiving servers (clients) that can connect to the RTMP server to receive and display the video feed. These can be other servers or devices running software that can play RTMP streams, such as VLC, FFmpeg, or a web-based player.
 
 The homebase server will send the video feed to the RTMP server, and the receiving servers will connect to the RTMP server to receive and display the live stream. Be sure to configure the receiving servers with the appropriate RTMP stream URL, which includes the server address and stream key you specified in step 1.
 
