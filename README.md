@@ -19,7 +19,7 @@ or:
 - DJI Zenmuse L1 LiDAR + RGB Survey Camera
 https://advexure.com/products/dji-zenmuse-l1-lidar-rgb-survey-camera?variant=40651659280539&gclid=Cj0KCQjw9rSoBhCiARIsAFOiplmTn5G7HRZmRkekjJT0IEAaU19JAP3UyloXs37CFivfynbKI8rzf08aAoBWEALw_wcB
 
-Here's how this system works:
+# Here's how this system works:
 
 The "Remote Camera (Client)" captures video frames from a camera (you can specify a different source if needed) and sends them as JPEG frames to the homebase server via HTTP POST requests.
 
