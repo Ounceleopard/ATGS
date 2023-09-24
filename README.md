@@ -1,4 +1,4 @@
-# Darkstar-ATGS
+# F-35-ATGS
 Air To Ground Scanner. Software to deploy on a drone for tracking targets using FLIR.
 
 Difference to the onboard software is that like a F-35 you can connect different drone feeds to map out a field. 
