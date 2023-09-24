@@ -1,5 +1,4 @@
-' pip install flask
-
+# pip install flask
 
 import cv2
 import numpy as np
@@ -38,7 +37,7 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)  # Change host and port as needed
 
 
-' Video to network
+# Video to recon network 
 
 import cv2
 import numpy as np
