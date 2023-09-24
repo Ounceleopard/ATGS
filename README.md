@@ -2,7 +2,8 @@
 Air To Ground Scanner. Software to deploy on a drone for tracking targets using FLIR.
 
 Difference to the onboard software is that like a F-35 you can connect different drone feeds to map out a field. 
-Fast drones can get closer to a target while, the "recon" drone fleet can map out the situation.
+Smaller and faster drones can get closer to a target while, the "recon" drone fleet can map out the situation. 
+This is to allow a command like receiver or leader to have more situational awareness continuously.
 
 Mapping out targets using python ai for unmanned drone fleets.
 
