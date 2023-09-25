@@ -3,8 +3,8 @@ import requests
 import numpy as np
 
 # Replace with the actual IP and port of your homebase server
-homebase_server_ip = "127.0.0.1"
-homebase_server_port = "5000"
+homebase_server_ip = "your_homebase_server_ip"
+homebase_server_port = "your_homebase_server_port"
 
 # Capture video from the remote camera (use 0 for the default camera)
 cap = cv2.VideoCapture(0)
