@@ -44,8 +44,8 @@ import time
 import pyrtmp
 
 # Set the RTMP server address and stream key
-rtmp_server = "rtmp://127.0.0.1:5000"
-stream_key = "12345"
+rtmp_server = "rtmp://your_rtmp_server_ip/live"
+stream_key = "your_stream_key"
 
 # Initialize video capture for the homebase server
 cap = cv2.VideoCapture(0)  # Use 0 for the default camera
