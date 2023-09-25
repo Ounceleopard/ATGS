@@ -1,5 +1,3 @@
-' pip install opencv-python-headless
-
 import cv2
 
 # Replace with the actual RTMP stream URL
