@@ -7,7 +7,7 @@ from flask import Flask, request, Response
 app = Flask(__name__)
 
 # Initialize video capture for the homebase server
-cap = cv2.VideoCapture(0)  # Use 0 for the default camera
+cap = cv2.VideoCapture(0)  # Use 0 for the default camera, Use 1 if you are having issues 
 
 def generate():
     while True:
@@ -35,7 +35,7 @@ def upload():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)  # Change host and port as needed
-
+# Disable airdrop sharing if you are on mac 
 
 # Video to recon network 
 
