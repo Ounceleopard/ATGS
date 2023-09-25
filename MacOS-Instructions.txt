@@ -35,4 +35,6 @@ chmod +x Contents/MacOS/Drone-Feed.py
 Run it from the terminal:
 ./ATGS.app/Contents/MacOS/Drone-Feed.py
 
+Python3 Drone-Feed.py
+
 This should execute your Python script as a macOS application.
