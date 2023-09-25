@@ -1,0 +1,23 @@
+
+Directory structure should look like this:
+
+ATGS.app/
+├── Contents/
+│ ├── Info.plist
+│ └── MacOS/
+│ └── Drone-Feed.py
+└── Resources/
+└── (other resources if needed)
+
+
+https://github.com/Ounceleopard/ATGS/issues/1#issuecomment-1732841008
+
+
+Set Executable Permission: In the terminal, navigate to the directory containing your app bundle and make your Python script executable by running the following command:
+
+open a terminal at your file location then
+chmod +x Contents/MacOS/Drone-Feedpy
+
+can run it from the terminal:
+./ATGS.app/Contents/MacOS/Drone-Feed.py
+This should execute your Python script as a macOS application.
