@@ -1,5 +1,5 @@
 # ATGS
-- Air To Ground Scanner. Software to deploy on a drone for tracking targets using FLIR.
+Air To Ground Scanner. Software to deploy on a drone for tracking targets using FLIR.
 
  - Difference to the onboard software is that like a F-35 system you can connect different drone feeds to map out a field using machine learning. Smaller and faster drones can get closer to a target while flying on autopilot with commands from the homebase. This is to allow a command like receiver to have more situational awareness continuously. Meanwhile the tracking fleet can serve as overwatch and track human targets with FLIR at night and day.
 
