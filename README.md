@@ -22,9 +22,9 @@ https://advexure.com/products/dji-zenmuse-l1-lidar-rgb-survey-camera?variant=406
 
 # Here's how this system works:
 
-The "Drone-Tracker-Feed" captures video frames from a drone (you can specify a different source if needed like your iphone) and tracking objects within those frames using the MIL (Multiple Instance Learning) tracking algorithm, and sending the video frames to a server over a network connection.
+The ["Drone-Tracker-Feed"](https://github.com/Ounceleopard/ATGS/blob/0ca643cf28a121eebf4aa12d1f5da530d7ed83f4/Drone-Tracker-Feed.py) captures video frames from a drone (you can specify a different source if needed like your iphone) and tracking objects within those frames using the MIL (Multiple Instance Learning) tracking algorithm, and sending the video frames to a server over a network connection.
 
-The "Home-Base-Server" receives these frames, deserializes them, and displays them in a window using OpenCV (cv2).
+The ["Home-Base-Server"](https://github.com/Ounceleopard/ATGS/blob/0ca643cf28a121eebf4aa12d1f5da530d7ed83f4/Home-Base-Server.py) receives these frames, deserializes them, and displays them in a window using OpenCV (cv2).
 
 The ["Drone-Network-Clients"](https://github.com/Ounceleopard/ATGS/blob/9db591fbfdaf603dee81ed5483d2f5cc526f737e/Drone-Network-Clients.py) is a program that connects to a server over a network, receives video frames sent by the server, deserializes these frames, and displays them in a window using OpenCV (cv2). Goal here is to involve more ai and have commends from the home base server to this program so that the drones can track without a human pilot.
 
