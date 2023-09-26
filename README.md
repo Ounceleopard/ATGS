@@ -24,6 +24,7 @@ The ["Drone-Network-Clients"](https://github.com/Ounceleopard/ATGS/blob/9db591fb
 
 # Example 
 - Code needs improvement but heres where I think I can get it in a few months.
+  
 ![park-people-smart-city-computer-vision-use-case-visoai-e1660257558388-1536x1340](https://github.com/Ounceleopard/F-35-ATGS/assets/40043757/a378ccec-b183-443b-b4df-e7013ec92b28)
 ![video-analysis-background-substraction-opencv-knn-method-1536x576](https://github.com/Ounceleopard/F-35-ATGS/assets/40043757/af09fe03-450c-4452-82bc-c111d9d5c360)
 
