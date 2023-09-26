@@ -1,3 +1,5 @@
+**** lEAVING HERE FOR REFERENCE. No longer needed with the current code base. *****
+
 Mac is not going to let you run the file in some/all cases because the code will want access to a webcam as default. 
 These are the steps to avoid that issue. Plist is a huge headache.. but I hope this helps. Submit a request if you need help setting it up.
 
