@@ -26,7 +26,7 @@ The "Drone-Tracker-Feed" captures video frames from a drone (you can specify a d
 
 The "Home-Base-Server" receives these frames, deserializes them, and displays them in a window using OpenCV (cv2).
 
-The "Drone-Network-Clients" is a program that connects to a server over a network, receives video frames sent by the server, deserializes these frames, and displays them in a window using OpenCV (cv2). Goal here is to involve more ai and have commends from the home base server to this program so that the drones can track without a human pilot.
+The ["Drone-Network-Clients"](https://github.com/Ounceleopard/ATGS/blob/9db591fbfdaf603dee81ed5483d2f5cc526f737e/Drone-Network-Clients.py) is a program that connects to a server over a network, receives video frames sent by the server, deserializes these frames, and displays them in a window using OpenCV (cv2). Goal here is to involve more ai and have commends from the home base server to this program so that the drones can track without a human pilot.
 
 # Example 
 Code needs improvement but heres where I think I can get it in a few months.
