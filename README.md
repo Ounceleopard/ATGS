@@ -23,7 +23,7 @@ The ["Home-Base-Server"](https://github.com/Ounceleopard/ATGS/blob/0ca643cf28a12
 The ["Drone-Network-Clients"](https://github.com/Ounceleopard/ATGS/blob/9db591fbfdaf603dee81ed5483d2f5cc526f737e/Drone-Network-Clients.py) is a program that connects to a server over a network, receives video frames sent by the server, deserializes these frames, and displays them in a window using OpenCV (cv2). Goal here is to involve more ai and have commends from the home base server to this program so that the drones can track without a human pilot.
 
 # Example 
-Code needs improvement but heres where I think I can get it in a few months.
+- Code needs improvement but heres where I think I can get it in a few months.
 ![park-people-smart-city-computer-vision-use-case-visoai-e1660257558388-1536x1340](https://github.com/Ounceleopard/F-35-ATGS/assets/40043757/a378ccec-b183-443b-b4df-e7013ec92b28)
 ![video-analysis-background-substraction-opencv-knn-method-1536x576](https://github.com/Ounceleopard/F-35-ATGS/assets/40043757/af09fe03-450c-4452-82bc-c111d9d5c360)
 
