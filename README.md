@@ -5,9 +5,8 @@ Air To Ground Scanner. Software to deploy on a drone for tracking targets using 
 
 Mapping out targets using python ai for unmanned drone fleets.
 
-["DJI"](https://enterprise.dji.com/flighthub-2)
-
 # Hardware 
+- DJI: FlightHub 2
 - Drone: DJI Matrice 300 RTK Commercial Drone System
 
 - FLIR Vue TZ20-R
