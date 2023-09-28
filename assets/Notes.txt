@@ -1,9 +1,1 @@
-
-# create python virtual environment
-python -m venv venv
-
-# install dependencies
-pip install -r requirements.txt
-pip install laps
 pip install ultralytics==8.0.0 # If you have issues with the newer version.
-
