@@ -18,7 +18,7 @@ https://advexure.com/products/dji-zenmuse-l1-lidar-rgb-survey-camera?variant=406
 
 ["ATGS"](https://github.com/Ounceleopard/ATGS/blob/e4a9ffe2593d767fd62e7d9838dc2c58d8656a08/ATGS.py) Launches a friendly user interface to control the server and drone.
 
-["Drone"](https://github.com/Ounceleopard/ATGS/blob/460561252c650e820b6e57865ba6da00be8753f5/Drone.py)
+["Drone"](https://github.com/Ounceleopard/ATGS/blob/460561252c650e820b6e57865ba6da00be8753f5/Drone.py) The drone feed pre-processes the captured video then sends it to the server. Using cv2 stream the video from the drone to the server and ultralytics Yolov8 for detection and annotation models. 
 
 ["Server"](https://github.com/Ounceleopard/ATGS/blob/e4a9ffe2593d767fd62e7d9838dc2c58d8656a08/Server.py)
 
