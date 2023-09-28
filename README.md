@@ -16,7 +16,7 @@ https://advexure.com/products/dji-zenmuse-l1-lidar-rgb-survey-camera?variant=406
 
 # Here's how this system works:
 
-The ["Drone-Tracker-Feed"](https://github.com/Ounceleopard/ATGS/blob/0ca643cf28a121eebf4aa12d1f5da530d7ed83f4/Drone-Tracker-Feed.py) captures video frames from a drone (you can specify a different source if needed like your iphone) and tracking objects within those frames using the MIL (Multiple Instance Learning) tracking algorithm, and sending the video frames to a server over a network connection.
+The [["Drone-Tracker-Feed"](https://github.com/Ounceleopard/ATGS/blob/0ca643cf28a121eebf4aa12d1f5da530d7ed83f4/Drone-Tracker-Feed.py) ](https://github.com/Ounceleopard/ATGS/blob/e1c830310eea1173652178d05f554437f6d1fb51/ATGS.py)captures video frames from a drone (you can specify a different source if needed like your iphone) and tracking objects within those frames using the MIL (Multiple Instance Learning) tracking algorithm, and sending the video frames to a server over a network connection.
 
 The ["Home-Base-Server"](https://github.com/Ounceleopard/ATGS/blob/0ca643cf28a121eebf4aa12d1f5da530d7ed83f4/Home-Base-Server.py) receives these frames, deserializes them, and displays them in a window using OpenCV (cv2).
 
