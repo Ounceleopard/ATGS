@@ -47,10 +47,10 @@ python3 ATGS.py
   
 ![park-people-smart-city-computer-vision-use-case-visoai-e1660257558388-1536x1340](https://github.com/Ounceleopard/F-35-ATGS/assets/40043757/a378ccec-b183-443b-b4df-e7013ec92b28)
 
-#### Current State
+### Current State
 - Patch 2 EST: OCT 10th 2023
 
 <img width="947" alt="Screenshot 2023-09-26 at 11 28 41 AM" src="https://github.com/Ounceleopard/ATGS/assets/40043757/ddddbfd7-4ab3-40df-9af8-a6708de8f50c">
 
-#### Disclaimer
+### Disclaimer
 This code for educational purposes only, do not attempt. I am not liable for any damages or injuries.
