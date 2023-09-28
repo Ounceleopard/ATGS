@@ -1,4 +1,4 @@
-# ATGS GUI
+# ATGS User Interface GUI
 
 import tkinter as tk
 from tkinter import ttk
