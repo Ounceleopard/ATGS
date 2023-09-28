@@ -30,14 +30,13 @@ python -m venv venv
 
 # Install dependencies
 pip install -r requirements.txt
-```
 
+# Sometimes lap install doesn't work
+pip install lapx
+```
 ### Execute
 
 ```bash
-# Sometimes lap install doesn't work
-pip install lapx
-
 # launch 
 python3 ATGS.py
 ```
