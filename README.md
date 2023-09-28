@@ -5,7 +5,7 @@ Air To Ground Scanner. Software to deploy on a drone for tracking targets using 
 
  - Mapping out targets using python ai for unmanned drone fleets. Really the goal here is to make a open source program and make it free to use, a poor man's version of DJI flighthub 2. Not only looking at cost but also make it available to use on none industrial drones like Mavic 3 or the mini series. 
 
-# Hardware 
+## Hardware 
 - Drone: DJI Matrice 300 RTK Commercial Drone System
 
 - FLIR Vue TZ20-R
@@ -14,7 +14,7 @@ https://advexure.com/products/flir-vue-tz20-dual-thermal-camera?variant=35654698
 - DJI Zenmuse L1 LiDAR + RGB Survey Camera
 https://advexure.com/products/dji-zenmuse-l1-lidar-rgb-survey-camera?variant=40651659280539&gclid=Cj0KCQjw9rSoBhCiARIsAFOiplmTn5G7HRZmRkekjJT0IEAaU19JAP3UyloXs37CFivfynbKI8rzf08aAoBWEALw_wcB
 
-# Here's how this system works:
+## Here's how this system works:
 
 ["ATGS"](https://github.com/Ounceleopard/ATGS/blob/e4a9ffe2593d767fd62e7d9838dc2c58d8656a08/ATGS.py) Launches a friendly user interface to control the server and drone.
 
@@ -22,7 +22,7 @@ https://advexure.com/products/dji-zenmuse-l1-lidar-rgb-survey-camera?variant=406
 
 ["Server"](https://github.com/Ounceleopard/ATGS/blob/e4a9ffe2593d767fd62e7d9838dc2c58d8656a08/Server.py) This is the homebase to where different drones stream their video feed. Here is where the video window clients are launched. 
 
-## Install
+### Install
 
 ```bash
 # Create python virtual environment
@@ -32,7 +32,7 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-## Execute
+### Execute
 
 ```bash
 # Sometimes lap install doesn't work
