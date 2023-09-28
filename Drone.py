@@ -7,27 +7,21 @@ import struct
 from ultralytics import YOLO
 import supervision as sv
 
-<<<<<<< HEAD
-########################
+#######################
 # Define the IP address and port of the homebase server
 homebase_ip = '127.0.0.1'  # Change this to the actual IP address
 homebase_port = 8080       # Change this to the actual Port address 
 DroneVideoSource = 0       # (You may need to change this based on your camera source)
-#########################
-=======
-# Define the IP address and port of the homebase server
-homebase_ip = '127.0.0.1'  # Change this to the actual IP address
-homebase_port = 8080
->>>>>>> parent of 831d6dd (Bug fixes and added a fps counter to the drone.)
+########################
 
 # Define video settings for the drone
-drone_video_width = 320  # Set the desired width (e.g., 320 for lower resolution)
-drone_video_height = 240  # Set the desired height (e.g., 240 for lower resolution)
+drone_video_width = 1280  # Set the desired width (e.g., 320 for lower resolution)
+drone_video_height = 720  # Set the desired height (e.g., 240 for lower resolution)
 drone_video_fps = 30  # Set the desired frame rate (e.g., 30 fps)
 
 # Define a line zone for counting objects
-LINE_START = sv.Point(160, 0)
-LINE_END = sv.Point(160, 240)
+LINE_START = sv.Point(600, 900)
+LINE_END = sv.Point(600, 100)
 
 def main():
     # Initialize the line counter and annotators
@@ -40,13 +34,11 @@ def main():
     )
 
     # Choose the YOLO model size (options ranging from small to big)
-    #model = YOLO("yolov8n.pt")  # You can choose a different model size here
-    model = YOLO("yolov8s.pt")
-    # model = YOLO("yolov8m.pt")
-    # model = YOLO("yolov8l.pt")
-    # model = YOLO("yolov8x.pt")
-
-    DroneVideoSource = 1  # (You may need to change this based on your camera source)
+    model = YOLO("yolov8n.pt")  # You can choose a different model size here
+    #model = YOLO("yolov8s.pt")
+    #model = YOLO("yolov8m.pt")
+    #model = YOLO("yolov8l.pt")
+    #model = YOLO("yolov8x.pt")
 
     # Create a VideoCapture object with custom resolution and fps
     cap = cv2.VideoCapture(DroneVideoSource)
@@ -60,8 +52,8 @@ def main():
     try:
         client_socket.connect((homebase_ip, homebase_port))
         print("Connection to homebase server established.")
-
-        for result in model.track(source=DroneVideoSource, show=True, stream=True, agnostic_nms=True):
+                                                        
+        for result in model.track(source=DroneVideoSource, show=False, stream=True, agnostic_nms=True):
             frame = result.orig_img
             detections = sv.Detections.from_yolov8(result)
 
@@ -73,7 +65,7 @@ def main():
 
             # Generate labels for the detected objects
             labels = [
-                f"{tracker_id} {model.model.names[class_id]} {confidence:0.2f}"
+                f"{tracker_id} {model.model.names[class_id]} {confidence:0.10f}"
                 for _, confidence, class_id, tracker_id
                 in detections
             ]

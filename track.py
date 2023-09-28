@@ -17,7 +17,7 @@ def init_tracker():
     global tracker
     sort_max_age = 5
     sort_min_hits = 2
-    sort_iou_thresh = 0.2
+    sort_iou_thresh = 0.3
     tracker = Sort(max_age=sort_max_age, min_hits=sort_min_hits, iou_threshold=sort_iou_thresh)
 
 rand_color_list = []
@@ -94,7 +94,7 @@ class DetectionPredictor(BasePredictor):
                                         max_det=self.args.max_det)
 
         for i, pred in enumerate(preds):
-            shape = orig_img[i].shape if self.webcam else orig_img.shape
+            shape = orig_img[i].shape if self.drone else orig_img.shape
             pred[:, :4] = ops.scale_boxes(img.shape[2:], pred[:, :4], shape).round()
 
         return preds
@@ -117,7 +117,7 @@ class DetectionPredictor(BasePredictor):
             im = im[None]  # Expand for batch dimension
         self.seen += 1
         im0 = im0.copy()
-        if self.webcam:  # Batch_size >= 1
+        if self.drone:  # Batch_size >= 1
             log_string += f'{idx}: '
             frame = self.dataset.count
         else:
@@ -165,8 +165,16 @@ def predict(cfg):
     """Main function for object detection and tracking."""
     init_tracker()
     random_color_list()
-
+    """
+    # Load an official or custom model
+    model = YOLO('yolov8n.pt')  # Load an official Detect model
+    model = YOLO('yolov8n-seg.pt')  # Load an official Segment model
+    model = YOLO('yolov8n-pose.pt')  # Load an official Pose model
+    model = YOLO('path/to/best.pt')  # Load a custom trained model
+    """
+    cfg.model = cfg.model or "yolov8n-seg.pt"
     cfg.model = cfg.model or "yolov8n.pt"
+    cfg.model = cfg.model or "yolov8s.pt"
     cfg.imgsz = check_imgsz(cfg.imgsz, min_dim=2)  # Check image size
     cfg.source = cfg.source if cfg.source is not None else ROOT / "assets"
     predictor = DetectionPredictor(cfg)
@@ -174,4 +182,3 @@ def predict(cfg):
 
 if __name__ == "__main__":
     predict()
-

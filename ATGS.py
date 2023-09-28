@@ -1,5 +1,6 @@
 # ATGS User Interface GUI
 
+
 import tkinter as tk
 from tkinter import ttk
 import os
@@ -17,11 +18,11 @@ class ServerDroneControlApp:
         self.root.title("Server and Drone Control Panel")
 
         # Increase the window size
-        self.root.geometry("600x400")
+        self.root.geometry("700x350")
 
         # Create a custom style for buttons
         self.style = ttk.Style()
-        self.style.configure("TButton", font=("Helvetica", 14), background="white")
+        self.style.configure("TButton", font=("Helvetica", 15), background="white")
 
         # Create a frame to hold buttons and labels
         self.frame = ttk.Frame(root)
@@ -50,8 +51,8 @@ class ServerDroneControlApp:
         self.drone_script_path = os.path.join(parent_directory, "Drone.py")
 
         # Create labels for server and drone status
-        self.server_status_label = ttk.Label(self.frame, text="Server Status: Not Running", font=("Helvetica", 16), foreground="red")
-        self.drone_status_label = ttk.Label(self.frame, text="Drone Status: Not Running", font=("Helvetica", 16), foreground="red")
+        self.server_status_label = ttk.Label(self.frame, text="Server Status: Not Running", font=("Helvetica", 20), foreground="red")
+        self.drone_status_label = ttk.Label(self.frame, text="Drone Status: Not Running", font=("Helvetica", 20), foreground="red")
 
         # Place status labels on the GUI
         self.server_status_label.grid(row=2, column=0, padx=20, pady=5, sticky="w")
