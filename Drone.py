@@ -7,9 +7,18 @@ import struct
 from ultralytics import YOLO
 import supervision as sv
 
+<<<<<<< HEAD
+########################
+# Define the IP address and port of the homebase server
+homebase_ip = '127.0.0.1'  # Change this to the actual IP address
+homebase_port = 8080       # Change this to the actual Port address 
+DroneVideoSource = 0       # (You may need to change this based on your camera source)
+#########################
+=======
 # Define the IP address and port of the homebase server
 homebase_ip = '127.0.0.1'  # Change this to the actual IP address
 homebase_port = 8080
+>>>>>>> parent of 831d6dd (Bug fixes and added a fps counter to the drone.)
 
 # Define video settings for the drone
 drone_video_width = 320  # Set the desired width (e.g., 320 for lower resolution)
