@@ -16,7 +16,7 @@ https://advexure.com/products/dji-zenmuse-l1-lidar-rgb-survey-camera?variant=406
 
 # Here's how this system works:
 
-[](https://github.com/Ounceleopard/ATGS/blob/460561252c650e820b6e57865ba6da00be8753f5/Drone.py)
+["Drone"](https://github.com/Ounceleopard/ATGS/blob/460561252c650e820b6e57865ba6da00be8753f5/Drone.py)
 
 The ["Home-Base-Server"](https://github.com/Ounceleopard/ATGS/blob/0ca643cf28a121eebf4aa12d1f5da530d7ed83f4/Home-Base-Server.py) receives these frames, deserializes them, and displays them in a window using OpenCV (cv2).
 
