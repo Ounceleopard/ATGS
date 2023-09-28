@@ -22,6 +22,23 @@ https://advexure.com/products/dji-zenmuse-l1-lidar-rgb-survey-camera?variant=406
 
 ["Server"](https://github.com/Ounceleopard/ATGS/blob/e4a9ffe2593d767fd62e7d9838dc2c58d8656a08/Server.py) This is the homebase to where different drones stream their video feed. Here is where the video window clients are launched. 
 
+## Install
+
+```bash
+# create python virtual environment
+python -m venv venv
+
+# install dependencies
+pip install -r requirements.txt
+```
+
+## Execute
+
+```bash
+pip install lapx 
+python -m main
+```
+
 # Example 
 - Code needs improvement but heres where I think I can get it in a few months.
   
