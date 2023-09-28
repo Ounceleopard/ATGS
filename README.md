@@ -25,10 +25,10 @@ https://advexure.com/products/dji-zenmuse-l1-lidar-rgb-survey-camera?variant=406
 ## Install
 
 ```bash
-# create python virtual environment
+# Create python virtual environment
 python -m venv venv
 
-# install dependencies
+# Install dependencies
 pip install -r requirements.txt
 ```
 
