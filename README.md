@@ -35,8 +35,11 @@ pip install -r requirements.txt
 ## Execute
 
 ```bash
-pip install lapx 
-python -m main
+# Sometimes lap install doesn't work
+pip install lapx
+
+# launch 
+python3 ATGS.py
 ```
 
 # Example 
