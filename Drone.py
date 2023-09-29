@@ -1,4 +1,4 @@
-# Drone
+# Drone: Sends the feed to the server (Desktop client)
 
 import cv2
 import socket
@@ -11,7 +11,7 @@ import supervision as sv
 # Define the IP address and port of the homebase server
 homebase_ip = '127.0.0.1'  # Change this to the actual IP address
 homebase_port = 8080       # Change this to the actual Port address 
-DroneVideoSource = 0       # (You may need to change this based on your camera source)
+DroneVideoSource = 1       # (You may need to change this based on your camera source)
 ########################
 
 # Define video settings for the drone
