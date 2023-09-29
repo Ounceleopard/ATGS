@@ -6,7 +6,7 @@ Air To Ground Scanner. Software to deploy on a drone for tracking targets using 
  - Mapping out targets using python ai for unmanned drone fleets. Really the goal here is to make a open source program and make it free to use, a poor man's version of DJI flighthub 2. Not only looking at cost but also make it available to use on none industrial drones like Mavic 3 or the mini series. 
 
 ## Hardware 
-- Drone: DJI Matrice 300 RTK Commercial Drone System
+- DJI Matrice 300 RTK Commercial Drone System
 
 - FLIR Vue TZ20-R
 https://advexure.com/products/flir-vue-tz20-dual-thermal-camera?variant=35654698467483
