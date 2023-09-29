@@ -42,7 +42,7 @@ python3 ATGS.py
 ```
 ### Current State
 
-<img width="947" alt="Screenshot 2023-09-26 at 11 28 41 AM" src="https://github.com/Ounceleopard/ATGS/assets/40043757/ddddbfd7-4ab3-40df-9af8-a6708de8f50c">
+- Operational 
 
 ### Disclaimer
 This code for educational purposes only, do not attempt. I am not liable for any damages or injuries.
