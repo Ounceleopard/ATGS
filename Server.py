@@ -41,7 +41,7 @@ try:
         msg_size = struct.unpack('<L', packed_msg_size)[0]
 
         while len(data) < msg_size:
-            data += client_socket.recv(10485760)  # If you run into issues try 4096 bytes. 10mb = 10485760 bytes depending on your needs.
+            data += client_socket.recv(10485760)  
 
         frame_data = data[:msg_size]
         data = data[msg_size:]
@@ -55,7 +55,7 @@ try:
         # Calculate and display the FPS and resolution
         frame_counter += 1
 
-        if frame_counter >= 30:  # Calculate FPS every 30 frames
+        if frame_counter >= 15:  # Calculate FPS every 30 frames
             end_time = time.time()
             elapsed_time = end_time - start_time  # Change this to actual elapsed time in seconds
             fps = frame_counter / elapsed_time
