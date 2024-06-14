@@ -29,7 +29,6 @@ def iou_batch(bb_test, bb_gt):
     # Function to compute the intersection over union (IOU) between two sets of bounding boxes
     bb_gt = np.expand_dims(bb_gt, 0)
     bb_test = np.expand_dims(bb_test, 1)
-    
     xx1 = np.maximum(bb_test[..., 0], bb_gt[..., 0])
     yy1 = np.maximum(bb_test[..., 1], bb_gt[..., 1])
     xx2 = np.minimum(bb_test[..., 2], bb_gt[..., 2])
@@ -95,7 +94,7 @@ class KalmanBoxTracker(object):
 
         # Keep yolov5 detected class information
         self.detclass = bbox[5]
-
+        
         # If we want to store bbox
         self.bbox_history = [bbox]
 
